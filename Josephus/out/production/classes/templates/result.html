@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<center>
+    <br><br>
+    <h2 style="color:red">Result</h2>
+    <br><br>
+
+    <div class="panel panel-danger" style="width:400px">
+        <div class="panel-heading">
+            <h3 class="panel-title">Result</h3>
+        </div>
+        <div class="panel-body">
+            <p th:text="'The last man remains is: ' + ${lastman}">Jack</p>
+        </div>
+    </div>
+
+    <a href="/Josephus"><button type="button" class="btn btn-primary">Return</button></a>
+
+</body>
+
+</html>
