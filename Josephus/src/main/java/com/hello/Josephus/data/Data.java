@@ -21,6 +21,4 @@ public class Data {
         this.cycle = cycle;
     }
 
-
-
 }

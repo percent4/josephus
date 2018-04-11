@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Show Result</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        mark {
+            background-color:#FFFF00; font-weight:bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<center>
+    <br><br>
+    <h2 style="color:red">Result</h2>
+    <br><br>
+
+    <div class="panel panel-danger" style="width:600px">
+        <div class="panel-heading">
+            <h3 class="panel-title">Show Result</h3>
+        </div>
+        <div class="panel-body">
+            <p th:utext="'<mark>n:&nbsp;&nbsp;&nbsp;&nbsp;' + ${data.whole}+',  m:&nbsp;&nbsp;&nbsp;&nbsp;' + ${data.cycle}+'</mark>'">n,m</p>
+            <p th:text="'The last man remains is: ' + ${lastman}">Jack</p>
+            <p th:text="'The order is: ' + ${order}">Order</p>
+        </div>
+    </div>
+
+    <a href="/Josephus"><button type="button" class="btn btn-success">Return</button></a>
+
+</body>
+
+</html>
